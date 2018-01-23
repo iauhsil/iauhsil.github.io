@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ofd文件转换</title>
+    <link rel="stylesheet" href="css/H-ui.reset.css">
+    <link rel="stylesheet" href="css/H-ui.min.css">
+    <link rel="stylesheet" href="css/H-ui.ie.css">
+    <link rel="stylesheet" href="css/ofd.css">
+</head>
+<body>
+<!--顶部开始-->
+<header>
+    <div class="header">
+        <div class="f-l">
+            <a href="javascript:;">
+                <img src="images/logo.png" alt=""/>
+                <span>陕西国博政通信息科技有限公司</span>
+            </a>
+        </div>
+        <div class="f-r">
+            <a href="javascript:;">欢迎您&nbsp;!</a>
+            <!--<a href="javascript:;">登录</a>-->
+            <!--<a href="javascript:;">注册</a>-->
+        </div>
+    </div>
+</header>
+<!--顶部结束-->
+<div class="mainContent">
+    <div class="mainBox">
+        <p class="text-c main_txt">
+            <span>GW 转 OFD</span>
+            <span>GD 转 OFD</span>
+            <span>SEP 转 OFD</span>
+            <span>DOC 转 OFD</span>
+            <span>DOCX 转 OFD</span>
+            <span>XLS 转 OFD</span>
+            <span>XLSX 转 OFD</span>
+            <span>WPS 转 OFD</span>
+            <span>PDF 转 OFD</span>
+            <span>PNG 转 OFD</span>
+            <span>JPG 转 OFD</span>
+        </p>
+        <div class="main_select">
+            <div class="text-c strong_txt">
+                <p>ofd文件转换工具</p>
+                <p>Upgrade your skills online</p>
+            </div>
+            <form action="" class="text-c">
+                <!--<span class="select_file select_selt">-->
+                    <!--<select name="" id="one">-->
+                        <!--<option value="1" selected="selected">请选择您的文件类型</option>-->
+                        <!--<option value="1">GW</option>-->
+                        <!--<option value="2">GD</option>-->
+                        <!--<option value="3">SEP</option>-->
+                        <!--<option value="4">DOC</option>-->
+                        <!--<option value="5">DOCX</option>-->
+
+                        <!--<option value="6">XLS</option>-->
+                        <!--<option value="7">XLSX</option>-->
+                        <!--<option value="8">WPS</option>-->
+                        <!--<option value="9">PDF</option>-->
+                        <!--<option value="10">PNG</option>-->
+                        <!--<option value="11">JPG</option>-->
+                    <!--</select>-->
+                    <!--<b></b>-->
+                <!--</span>-->
+                <span class="select_file text-l upload">
+                    <label for="file">请上传您需要转换的文件</label>
+                    <input type="file" id="file" placeholder="请选择您的文件类型">
+                    <b></b>
+                </span>
+                <input type="submit" value="转换">
+            </form>
+            <p class="text-c select_txt">
+                <span><b></b>文件在线转换--快速</span>
+                <span><b></b>文件在线转换--便捷</span>
+                <span><b></b>文件在线转换--高效</span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="part_ul">
+    <ul>
+        <li class="f-l">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolor dolorum, ducimus eligendi exercitationem, ipsam ipsum iusto laudantium maiores nesciunt nihil possimus quas reprehenderit sequi tempore? Eligendi, officia.
+        </li>
+        <li class="f-l">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolor dolorum, ducimus eligendi exercitationem, ipsam ipsum iusto laudantium maiores nesciunt nihil possimus quas reprehenderit sequi tempore? Eligendi, officia.
+        </li>
+        <li class="f-l">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolor dolorum, ducimus eligendi exercitationem, ipsam ipsum iusto laudantium maiores nesciunt nihil possimus quas reprehenderit sequi tempore? Eligendi, officia.
+        </li>
+    </ul>
+</div>
+
+<footer>
+    <div class="footer_box">
+        <div class="footer_01">
+            <p class="f-l">受欢迎的转换：</p>
+            <p class="f-r main_txt">
+                <span>GW 转 OFD</span>
+                <span>GD 转 OFD</span>
+                <span>SEP 转 OFD</span>
+                <span>DOC 转 OFD</span>
+                <span>DOCX 转 OFD</span>
+                <span>XLS 转 OFD</span>
+                <span>XLSX 转 OFD</span>
+                <span>WPS 转 OFD</span>
+                <span>PDF 转 OFD</span>
+                <span>PNG 转 OFD</span>
+                <span>JPG 转 OFD</span>
+            </p>
+        </div>
+        <div class="footer_02">
+            <p>
+                <span class="f-l"><img src="images/renovate.png" alt="">统计数据：&nbsp;&nbsp;<b>106,781,236</b>个文件 ,总大小为<b>1241.23</b>TB</span>
+                <span class="f-r">我们始终如一</span>
+            </p>
+        </div>
+        <div class="footer_03">
+            <span class="f-l">
+                <p>联系我们：陕西国博政通信息科技有限公司</p>
+                <p>公司网站：www.sxgbzt.com</p>
+            </span>
+            <span class="f-r">
+                <img src="images/tel.png" alt="">029&nbsp;-&nbsp;8888&nbsp;-&nbsp;8888
+            </span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(".upload").on("change","input[type='file']",function(){
+        var file_val=$("input[type='file']").val();
+        console.log(file_val);
+        var arr=file_val.split('\\');
+        var fileName=arr[arr.length-1];
+        var span_val=$(".upload label").html(fileName);
+
+    })
+</script>
+</body>
+</html>
